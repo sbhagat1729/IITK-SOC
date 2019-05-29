@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First sub-window</title>
+	<style type="text/css">
+		.resize{
+			position: relative;
+		    padding-bottom: 64%;
+		    padding-top: 36px;
+		}
+		.resize iframe{
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 75%;
+		    height: 55%;
+		}
+	</style>
+</head>
+<body>
+	<h1>My First sub-window</h1>
+	<div class = "resize">
+		<iframe name="myFrame" height=500px width =700px ></iframe>
+	</div>
+	<ul>
+		<li><a href="https://www.google.com/webhp?igu=1" target="myFrame">Google</a></li><br/>
+		<li><a href="https://www.wikipedia.org" target="myFrame">Wikipedia</a></li><br/>
+		<li><a href="https://www.bing.com" target="myFrame">Bing</a></li><br/>
+	</ul>
+</body>
+<script type="text/javascript">
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First sub-window</title>
+	<script type="text/javascript">
+		function go(){
+			var url = document.getElementById("urlName").value;
+			document.getElementById("frame").src = url;
+		}
+		function resize(){
+			var h = document.getElementById("height").value;
+			var w = document.getElementById("width").value;
+			document.getElementById("frame").height = h + "px";
+			document.getElementById("frame").width = w+ "px";
+		}
+	</script>
+</head>
+<body>
+	<h1>My First sub-window</h1>
+	<iframe name="myFrame" id="frame" height=500px width=700px ></iframe>
+	<form>
+		<input type="text" id="urlName" placeholder="Enter a url">
+		<input type="button" value="GO!" onclick="go()">
+	</form>
+	<form>
+		<input type="number" id="height" placeholder="Enter height in pixels">
+        <input type="number" id="width" placeholder="Enter width in pixels">
+        <input type="button" value="submit" onclick="resize()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First sub-window</title>
+	<style type="text/css">
+		.resize{
+			position: relative;
+		    padding-bottom: 64%;
+		    padding-top: 36px;
+		}
+		.resize iframe{
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 75%;
+		    height: 55%;
+		}
+	</style>
+	<script type="text/javascript">
+		function go(){
+			var url = document.getElementById("urlName").value;
+			document.getElementById("frame").src = url;
+		}
+	</script>
+</head>
+<body>
+	<h1>My First sub-window</h1>
+	<div class = "resize">
+		<iframe name="myFrame" height=500px width =700px id="frame"></iframe>
+	</div>
+	<form>
+		<input type="text" id="urlName" placeholder="Enter a url">
+		<input type="button" value="GO!" onclick="go();">
+	</form>
+</body>
+</html>
